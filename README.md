@@ -1,15 +1,13 @@
-# Default themes for TypeDoc
+# typedoc theme pikachu
 
-This module contains the default themes of TypeDoc.
-Visit http://typedoc.org/ to learn more about TypeDoc.
+> fork from [typedoc-default-themes](https://github.com/TypeStrong/typedoc-default-themes)
 
+## usage
 
-## Contributing
-
-Contributions are welcome and appreciated. You can find TypeDoc on GitHub, feel free to start
-an issue or create a pull requests:<br>
-[https://github.com/TypeStrong/typedoc](https://github.com/TypeStrong/typedoc)
-
+```bash
+yarn add typedoc-pikachu-themes
+typedoc --theme node_modules/typedoc-pikachu-themes/bin
+```
 
 ## License
 

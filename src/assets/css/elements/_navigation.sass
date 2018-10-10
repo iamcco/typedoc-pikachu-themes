@@ -13,7 +13,10 @@
         +INDENT($DEPTH, $BASE, $STEP)
 
 .tsd-navigation
-    padding: 0 0 0 40px
+    padding: 0
+
+    +size-xs-sm
+        padding: 0 0 0 20px
 
     a
         display: block
@@ -160,3 +163,8 @@
 
             &.sticky-current
                 position: sticky
+
+.navigation-sticky
+    position: sticky
+    top: 60px
+
