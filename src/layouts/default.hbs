@@ -15,7 +15,7 @@
 
 <div class="container container-main">
     <div class="row">
-        <div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+        <div class="col-3 col-menu menu-sticky-wrap menu-highlight">
             <nav class="tsd-navigation primary">
                 <ul>
                     {{#each navigation.children}}
@@ -24,7 +24,7 @@
                 </ul>
             </nav>
 
-            <nav class="tsd-navigation secondary menu-sticky">
+            <nav class="tsd-navigation secondary menu-sticky navigation-sticky-mobile">
                 <ul class="before-current">
                     {{#each toc.children}}
                         {{> toc.root}}
@@ -32,8 +32,19 @@
                 </ul>
             </nav>
         </div>
-        <div class="col-8 col-content">
+        <div class="{{#if toc.children}}col-7{{else}}col-9{{/if}} col-content">
             {{{contents}}}
+        </div>
+        <div class="navigation-sticky-normal">
+          <div class="col-2 menu-highlight menu-sticky-wrap">
+            <nav class="tsd-navigation secondary menu-sticky">
+              <ul class="before-current">
+                {{#each toc.children}}
+                {{> toc.root}}
+                {{/each}}
+              </ul>
+            </nav>
+          </div>
         </div>
     </div>
 </div>

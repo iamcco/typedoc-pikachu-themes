@@ -164,7 +164,15 @@
             &.sticky-current
                 position: sticky
 
-.navigation-sticky
+.navigation-sticky-normal
     position: sticky
     top: 60px
+    +size-xs-sm
+        display: none
+    +size-md
+        display: none
 
+.navigation-sticky-mobile
+    display: none
+    +size-xs-sm
+        display: block
